@@ -1,0 +1,108 @@
+.grid-table {
+width:100%;
+background-color:#fff;
+}
+
+.grid-table thead td {
+-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.40);
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.40);
+background-color: gainsboro;
+background: -webkit-gradient(linear,left top,left bottom,from(#F4F4F4),to(gainsboro));
+text-shadow: white 0 1px;
+padding:5px 5px 5px 10px;
+border:1px solid #e0e0e0;
+position:relative;
+cursor:default;
+font-size:14px;
+}
+
+.grid-table thead td:hover
+{
+background-color: gainsboro;
+background: -webkit-gradient(linear,left top,left bottom,from(gainsboro),to(gainsboro));
+}
+
+.grid-table thead td.sortable {
+cursor:pointer;
+}
+
+.grid-table thead td i{
+position: absolute;
+top: 10px;
+right: 10px;
+}
+
+.grid-table tbody td
+{
+	color:#666;
+}
+
+/* LOADING */
+.grid-table.loading thead td,
+.grid-table.loading thead td:hover
+.grid-table.loading thead td.sortable
+{
+background: -webkit-gradient(linear,left top,left bottom,from(#F4F4F4),to(#F4F4F4));
+color:#cccccc;
+pointer:default !important;
+}
+
+.grid-table.loading thead td i
+{
+	display:none;
+}
+
+.grid-table.loading tbody td,
+.grid-table.loading tbody td:hover,
+.grid-table.loading tfoot td,
+.grid-table.loading tfoot td:hover
+{
+background-color: #f1f1f1;
+color:#cccccc;
+pointer:default  !important;
+}
+
+/* TFOOT AND PAGINATION */
+.grid-table tfoot td
+{
+	padding: 3px;
+}
+
+.grid-table tfoot td div.pagination 
+{
+	margin: 0px;
+}
+
+.grid-table.loading tfoot td div.pagination 
+{
+	visibility:hidden;
+}
+
+.grid-table tfoot td div.pagination ul 
+{
+	
+}
+
+.grid-table tfoot td div.pagination ul li
+{
+	
+}
+
+.grid-table tfoot td div.pagination ul li a
+{
+	line-height: 14px;
+}
+
+.grid-table tfoot td div.pagination ul li a.active,
+.grid-table tfoot td div.pagination ul li a.active:hover
+{
+	cursor:default;
+	
+}
+
+
+.grid-table tfoot td div.pagination ul li a.not-active,
+.grid-table tfoot td div.pagination ul li a.not-active:hover
+{
+	cursor:default;
+}
