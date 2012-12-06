@@ -683,7 +683,7 @@
             width: '33%',
             sortable: true,
             sortType: 'string',
-            defaultValue: 'default'
+            defaultValue: '&nbsp;'
         }, {
             label: 'Col2',
             id: 'col2',

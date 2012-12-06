@@ -33,7 +33,7 @@ grid.js is a simple table grid jQuery plugin over [bootstrap](http://twitter.git
 			<script type="text/javascript" src="js/grid.js"></script>
 			
 			<script type="text/javascript" >
-				(funtion($){
+				(function($){
 					$('div#table-container').grid();
 				})(windows.jQuery);
 			</script>
